@@ -1,17 +1,17 @@
 {
-	"version": 2,
-	"name": "RBAC-Project-main",
-	"builds": [
-		{
-			"src": "src/index.js",
-			"use": "@vercel/node"
-		}
-	],
-  "routes": [
+  "version": 2,
+  "name": "node-mongodb-rbac",
+  "builds": [
     {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
-    },
+      "src": "src/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "static": {
+    "src": "public",
+    "dest": "/"
+  },
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "src/index.js"
