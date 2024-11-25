@@ -10,7 +10,7 @@
 	"routes": [
 		{
 			"src": "/css/(.*)",
-			"dest": "/public/css/$1"
+			"dest": "/public/css/style.css"
 		},
 		{
 			"src": "/(.*)",
