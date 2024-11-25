@@ -7,11 +7,11 @@
       "use": "@vercel/node"
     }
   ],
-  "static": {
-    "src": "public",
-    "dest": "/"
-  },
   "routes": [
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "src/index.js"
