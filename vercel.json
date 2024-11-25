@@ -1,6 +1,6 @@
 {
 	"version": 2,
-	"name":"RBAC-Project-main",
+	"name": "RBAC-Project-main",
 	"builds": [
 		{
 			"src": "src/index.js",
@@ -10,7 +10,7 @@
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "src/index.js",
+			"dest": "src/index.js"
 		}
 	]
 }
