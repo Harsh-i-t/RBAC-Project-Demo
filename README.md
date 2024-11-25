@@ -34,3 +34,8 @@ ADMIN_EMAIL=admin@gmail.com
 `
 - Start the development server:
 `npm run dev`
+
+# Security Best Practices
+- Passwords are hashed using bcrypt.
+- User sessions are secured with a session secret and stored in MongoDB.
+- Role-based middleware restricts unauthorized access to sensitive route
