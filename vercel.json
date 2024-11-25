@@ -3,15 +3,14 @@
 	"name":"RBAC-Project-main",
 	"builds": [
 		{
-			"src": "./src/index.js",
+			"src": "src/index.js",
 			"use": "@vercel/node"
 		}
 	],
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "/",
-			"methods": ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"]
+			"dest": "src/index.js",
 		}
 	]
 }
