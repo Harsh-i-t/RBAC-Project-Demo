@@ -1,0 +1,39 @@
+<%- include('./layouts/header') %>
+
+<h1 class="title">Role Based Access Control</h1>
+<div class="tutorial-info">
+
+	<h2> How to Proceed </h2>
+	<ol class="tutorial-info">
+		<li>To Login into a Admin account use the <b>Login</b> button with email admin@email.com and password admin. </li>
+		<li>In Manage Users page, you can see list of all users and assign roles, currently it will have only your account. </li>
+		<li>Create another account using the <b>Register</b> button with any email, it will be bydefault User account. </li>
+		<li>You can see that you will have limited permission like to only view your profile. </li>
+	</ol>
+	<p>----------------------------------------------------------------------------------------------------</p>
+	<h2>Features</h2>
+	<ol class="tutorial-info">
+		<li><b>Express.js</b>: Lightweight and fast web application framework.</li>
+		<li><b>EJS</b>: Templating engine for dynamic HTML generation.</li>
+		<li><b>PassportJS</b>: Local authentication using email and password.</li>
+		<li><b>Roles</b>: Includes predefined roles such as <b>Admin</b>, <b>Moderator</b>, and <b>User</b>, each with specific permissions.</li>
+		<li><b>Authorization</b>: Role-based route protection for secure access control.</li>
+		<li><b>Mongoose</b>: Object-Relational Mapping (ORM) for MongoDB integration.</li>
+		<li><b>Express Sessions</b>: Manage user sessions securely.</li>
+		<li>
+			Persistent login using <b>Mongo Store</b>, even after server reboot.
+		</li>
+		<li><b>Secure Password Handling</b>: Passwords are hashed using bcrypt for secure storage.</li>
+		<li><b>Flash Messages</b>: Real-time feedback for user actions like login errors or access restrictions.</li>
+		<li><b>Error Handling</b>: Custom 404 and error pages for better user experience.</li>
+		
+	</ol>
+
+	<h2>How It Works</h2>
+	<p>
+		The system employs <b>Passport.js</b> for authentication and middleware for role validation. Admin and Moderator roles have specific privileges, while general users have restricted access. Routes are secured with custom middleware to prevent unauthorized access.
+	</p>
+
+</div>
+
+<%- include('./layouts/footer') %>
