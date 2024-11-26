@@ -12,6 +12,7 @@ const passport = require('passport');
 const MongoStore = require('connect-mongo');
 const { ensureLoggedIn } = require('connect-ensure-login');
 const { roles } = require('./utils/constants');
+const path = require('path');
 
 // Initialization
 const app = express();
@@ -20,7 +21,7 @@ app.use(helmet());
 app.use(cors());
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
