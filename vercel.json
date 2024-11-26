@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/style.css",
-      "dest": "/public/style.css"
+      "dest": "/src/views/style.css"
     },
     {
       "src": "/(.*)",
